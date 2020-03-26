@@ -23,3 +23,13 @@ Linux is the perfect solution to this problem for several reasons.
 2. It is almost infinately customizable. This is perfect for a situation where the user has specific requirements for the user interface
 3. It is free. As the saying goes, free, as in beer, and free, as in freedom. This means that the software can be used, re-used, and distributed at will with no worries about infringing licenses. It also means you don't have to pay for it.
 ### But Which Distribution
+Now that I'm clear on using Linux, I have to decide which version of Linux to use. These versions are called distributions. Since Linux is open-source software, each distribution can choose exactly how their version of the OS works. I want to go with Debian or Ubuntu based distributions, since I am familiar with those. In addition, I would prefer to use a distribution that will be supported for a long time, and preferably one that offers long-time support.
+
+I have several options that I want to investigate
+
+- Peppermint OS
+
+    - Peppermint OS is an Ubuntu derivative that is optimized for web applications. It uses a tool called Ice SSB (Site Specific Browsers) to create an isolated browser window that appears as an app listed in the application menu. 
+    - This is perfect for a thin client. Certain websites (like the Citrix login gateway) could be setup as apps. 
+    - The OS is also very light. I set it up in a testing environment and it was running on average at 500-600 megs of RAM.
+    - The issue with this OS is there is no obvious way to lock down the desktop. While you can easily disable keyboard shortcuts and customize the panel to include no application menu and only the desired launchers, the user can easily modify the panel or open the settings panel by right clicking.
