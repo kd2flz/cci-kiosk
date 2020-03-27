@@ -36,3 +36,12 @@ I have several options that I want to investigate
     - I will continue testing Peppermint, but luckily Ice SSB is available via a .deb file in other Debian based distributions from Launchpad https://launchpad.net/~peppermintos/+archive/ubuntu/p10-release/+files/ice_6.0.6_all.deb
 
 - Kubuntu 
+
+
+
+## Distribution/ Installation
+So far, I've found the following software for creating a live system from an existing Linux install:
+## Linux Respin
+- Although this project recently got a website upgrade, their Launchpad has seen no new aditions to the software since 2016, so I'm not very keen to use this
+## Linux Live Kit https://www.linux-live.org/#explore
+- This project seems fairly active. I've never used it, but it looks like it's worth investigating
