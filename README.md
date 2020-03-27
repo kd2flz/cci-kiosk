@@ -34,3 +34,5 @@ I have several options that I want to investigate
     - The OS is also very light. I set it up in a testing environment and it was running on average at 500-600 megs of RAM.
     - The issue with this OS is there is no obvious way to lock down the desktop. While you can easily disable keyboard shortcuts and customize the panel to include no application menu and only the desired launchers, the user can easily modify the panel or open the settings panel by right clicking.
     - I will continue testing Peppermint, but luckily Ice SSB is available via a .deb file in other Debian based distributions from Launchpad https://launchpad.net/~peppermintos/+archive/ubuntu/p10-release/+files/ice_6.0.6_all.deb
+
+- Kubuntu 
