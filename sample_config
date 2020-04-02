@@ -1,5 +1,6 @@
 #!/bin/bash
 #Sample config file, if your user is not called kiosk, change all occurences of the username in this script to your user's name
+#Special thanks to Oli Warner https://thepcspy.com, Alan D Moore http://alandmoore.com, and NovaSpirit Tech https://www.novaspirit.com/
 #Update the server
 sudo apt update
 
@@ -10,9 +11,16 @@ sudo apt upgrade -y
 #--no-install-recommends prevents package manager from installing unnecessary packages wanted by the target packages
 sudo apt install -y --no-install-recommends xorg openbox chromium-browser pulseaudio
 
+#Install Citrix Workspace App and Remmina for remote desktop connections
+#!Please! Make sure you replace this link with the link to the latest Citrix Workspace App .deb download
+wget https://downloads.citrix.com/16914/icaclient_19.12.0.19_amd64.deb?__gda__=1585861582_d3571872a714920c2bb3de2ac903c99e
+sudo apt install -y --no-install-recommends ./icaclient_19.12.0.19_amd64.deb
+
 #Adds Kiosk user to audio group
 sudo usermod -a -G audio kiosk
 
 #Copy configuration scripts to correct directories
 sudo cp -r kiosk.conf /etc/init.d/
 sudo cp -r kiosk.sh /opt/
+sudo cp -r autostart /etc/xdg/openbox/
+sudo chmod +x /etc/xdg/openbox/autostart

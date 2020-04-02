@@ -43,10 +43,10 @@ I have several options that I want to investigate
 - Zorin OS Lite
     - Zorin OS is a world class operating system, and their relatively new Lite operating offers the polish of Zorin's flagship Ultimate Edition with a light-weight XFCE desktop.
     - Positives: Zorin is based on Ubuntu, offering all of the software in the Ubuntu Repos. It also offers on a slower release schedule, offering longer-term support
-    - Negatives: The XFCE desktop environment poses the same problems as Peppermint's desktop with regards to locking it down. There is theoritically a way to lock down XFCE, but I never got it to work.
+    - Negatives: The XFCE desktop environment poses the same problems as Peppermint's desktop with regards to locking it down. There is theoretically a way to lock down XFCE, but I never got it to work.
 
 - Build from Scratch 
-     - While researching options for this project, I came accross Alan D. Moore's blog on building a Kiosk. While this blog is dated (it's from 2011 with updates in 2012), the software it references is 
+     - While researching options for this project, I came across Alan D. Moore's blog on building a Kiosk. While this blog is dated (it's from 2011 with updates in 2012), the software it references is all fairly current. In addition, Oli Warner describes a similar solution in a 2014 blog post https://thepcspy.com/read/building-a-kiosk-computer-ubuntu-1404-chrome/ and Novaspirit tech in a 2018 video https://www.youtube.com/watch?v=I2laR5G5FFo. 
 
 
 ## Distribution/ Installation
@@ -55,3 +55,5 @@ So far, I've found the following software for creating a live system from an exi
 - Although this project recently got a website upgrade, their Launchpad has seen no new aditions to the software since 2016, so I'm not very keen to use this
 ## Linux Live Kit https://www.linux-live.org/#explore
 - This project seems fairly active. I've never used it, but it looks like it's worth investigating
+## Scripts
+- Perhaps another good option would be a set of scripts that the user can run on an already installed system. It would still be important to specify a base system or systems that the scripts are known to work on.
