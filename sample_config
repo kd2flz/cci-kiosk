@@ -1,11 +1,18 @@
-#First install Ubuntu Server LTS
-
 #!/bin/bash
-
+#Sample config file, if your user is not called kiosk, change all occurences of the username in this script to your user's name
 #Update the server
 sudo apt update
+
+#Upgrade the server
 sudo apt upgrade -y
 
-sudo apt install --no-install-recommends xorg openbox chromium-browser pulseaudio
+#install x server, openbox display manager, chromium browser (open source version of Chrome), and pulse audio, for sound
+#--no-install-recommends prevents package manager from installing unnecessary packages wanted by the target packages
+sudo apt install -y --no-install-recommends xorg openbox chromium-browser pulseaudio
 
-sudo usermod -a -G audio $USER
+#Adds Kiosk user to audio group
+sudo usermod -a -G audio kiosk
+
+#Copy configuration scripts to correct directories
+sudo cp -r kiosk.conf /etc/init.d/
+sudo cp -r kiosk.sh /opt/
