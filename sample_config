@@ -1,0 +1,11 @@
+#First install Ubuntu Server LTS
+
+#!/bin/bash
+
+#Update the server
+sudo apt update
+sudo apt upgrade -y
+
+sudo apt install --no-install-recommends xorg openbox chromium-browser pulseaudio
+
+sudo usermod -a -G audio $USER

@@ -36,17 +36,7 @@ I have several options that I want to investigate
     - I will continue testing Peppermint, but luckily Ice SSB is available via a .deb file in other Debian based distributions from Launchpad https://launchpad.net/~peppermintos/+archive/ubuntu/p10-release/+files/ice_6.0.6_all.deb
 
 - Kubuntu 
-    - KDE Plasma is a great desktop environment, and offers a large amount of flexibility. In addition, it has built in kiosk configurations. https://techbase.kde.org/Projects/Plasma/Kiosk
-    - Positives: KDE is a sleek and light desktop environment. In addition, the support and assurance offered by Ubuntu is hard to match for an enterprise setting
-    - Negatives: The very customizability which makes KDE so flexible also poses some risks in this situation. For this particular application, I want to make sure there are no hidden settings the user can access.
 
-- Zorin OS Lite
-    - Zorin OS is a world class operating system, and their relatively new Lite operating offers the polish of Zorin's flagship Ultimate Edition with a light-weight XFCE desktop.
-    - Positives: Zorin is based on Ubuntu, offering all of the software in the Ubuntu Repos. It also offers on a slower release schedule, offering longer-term support
-    - Negatives: The XFCE desktop environment poses the same problems as Peppermint's desktop with regards to locking it down. There is theoritically a way to lock down XFCE, but I never got it to work.
-
-- Build from Scratch 
-     - While researching options for this project, I came accross Alan D. Moore's blog on building a Kiosk. While this blog is dated (it's from 2011 with updates in 2012), the software it references is 
 
 
 ## Distribution/ Installation
