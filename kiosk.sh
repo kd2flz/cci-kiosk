@@ -7,6 +7,6 @@ openbox-session &
 start-pulseaudio-x11
 
 while true; do
-  rm -rf ~/.{config,cache}/google-chrome/
+  rm -rf ~/.{config,cache}/chromium-browser/
   chromium-browser --kiosk --no-first-run  'http://bruderhof.com'
 done
