@@ -16,9 +16,11 @@ sudo apt install -y --no-install-recommends xorg openbox chromium-browser pulsea
 
 #Uncomment below to install Citrix Workspace App and Remmina for remote desktop connections
 #!Please! Make sure you replace this link with the link to the latest Citrix Workspace App .deb download
-wget https://downloads.citrix.com/16914/icaclient_19.12.0.19_amd64.deb?__gda__=1585861582_d3571872a714920c2bb3de2ac903c99e
-sudo apt install -y --no-install-recommends ./icaclient_19.12.0.19_amd64.deb
-sudo apt install -y remmina
+#wget https://downloads.citrix.com/16914/icaclient_19.12.0.19_amd64.deb?__gda__=1585861582_d3571872a714920c2bb3de2ac903c99e
+#sudo apt install -y --no-install-recommends ./icaclient_19.12.0.19_amd64.deb
+#sudo apt install -y remmina
+#Install tint2 task manager
+sudo apt install tint2
 
 #Adds Kiosk user to audio group
 sudo usermod -a -G audio kiosk
