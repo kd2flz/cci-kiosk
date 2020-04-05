@@ -45,15 +45,19 @@ I have several options that I want to investigate
     - Positives: Zorin is based on Ubuntu, offering all of the software in the Ubuntu Repos. It also offers on a slower release schedule, offering longer-term support
     - Negatives: The XFCE desktop environment poses the same problems as Peppermint's desktop with regards to locking it down. There is theoretically a way to lock down XFCE, but I never got it to work.
 
+- MX Linux
+    - What attracts me to MX Linux is that they have a lot of useful built in tooling. Specifically, I'm thinking of their snapshot tool which makes a bootable ISO of your current system. This could be handy for distribution purposes. 
+    - Although MX does have a good sized community surrounding it, it is not supported quite on the level of Ubuntu or even Zorin OS. 
+
 - Build from Scratch 
-     - While researching options for this project, I came across Alan D. Moore's blog on building a Kiosk. While this blog is dated (it's from 2011 with updates in 2012), the software it references is all fairly current. In addition, Oli Warner describes a similar solution in a 2014 blog post https://thepcspy.com/read/building-a-kiosk-computer-ubuntu-1404-chrome/ and Novaspirit tech in a 2018 video https://www.youtube.com/watch?v=I2laR5G5FFo. 
+     - While researching options for this project, I came across Alan D. Moore's blog on building a Kiosk. While this blog is dated (it's from 2011 with updates in 2012), the software it references is all fairly current. In addition, Oli Warner describes a similar solution in a [2014 blog post] (https://thepcspy.com/read/building-a-kiosk-computer-ubuntu-1404-chrome/) and Novaspirit tech in a [2018 video] (https://www.youtube.com/watch?v=I2laR5G5FFo). 
 
 
 ## Distribution/ Installation
 So far, I've found the following software for creating a live system from an existing Linux install:
-## Linux Respin
+### Linux Respin
 - Although this project recently got a website upgrade, their Launchpad has seen no new aditions to the software since 2016, so I'm not very keen to use this
-## Linux Live Kit https://www.linux-live.org/#explore
+### [Linux Live Kit](https://www.linux-live.org/#explore)
 - This project seems fairly active. I've never used it, but it looks like it's worth investigating
-## Scripts
+### Scripts
 - Perhaps another good option would be a set of scripts that the user can run on an already installed system. It would still be important to specify a base system or systems that the scripts are known to work on.

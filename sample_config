@@ -23,6 +23,7 @@ sudo apt install -y --no-install-recommends xorg openbox chromium-browser pulsea
 #Install alsa for sound
 sudo apt install alsa
 sudo apt install alsa-utils
+#Now you can adjust volume using the alsamixer command
 
 #Install tint2 task manager
 sudo apt install -y tint2
