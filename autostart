@@ -1,3 +1,3 @@
 #!/bin/bash
 #This file automatically starts a given application on startup
-chromium-browser --disable-info-bars --kiosk 'http://bruderhof.com' 
+chromium-browser --disable-info-bars --kiosk 'kd2flz.github.io/cci-kiosk' 

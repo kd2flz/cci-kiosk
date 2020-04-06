@@ -1,5 +1,5 @@
-# cc-client
-CC-Client is a Linux-based thin client for use with Citrix, RDP, and VNC.
+# CCI-Kiosk
+CCI-Kiosk is a Linux-based thin client for use with Citrix, RDP, and VNC.
 
 ## Introduction
 This project came about because an organization I am a part of was looking at upgrading their thin clients which currently use Windows 7. Many of these machines are old, and would have issues running Windows 10. Since Windows 7 has passed it's end-of-life they would like to find a way to update without throwing away all these machines.
