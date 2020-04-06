@@ -12,7 +12,7 @@ sudo apt upgrade -y
 sudo apt install -y --no-install-recommends xorg openbox chromium-browser pulseaudio
 
 #Uncommment below to install Cockpit for remote management - note, if you are using a non-ubuntu based system, like Debian, you will have to change this command
-#sudo apt install -y cockpit
+sudo apt install -y cockpit
 
 #Uncomment below to install Citrix Workspace App and Remmina for remote desktop connections
 #!Please! Make sure you replace this link with the link to the latest Citrix Workspace App .deb download
@@ -24,6 +24,9 @@ sudo apt install -y --no-install-recommends xorg openbox chromium-browser pulsea
 sudo apt install alsa
 sudo apt install alsa-utils
 #Now you can adjust volume using the alsamixer command
+
+#Install lightdm greeter
+sudo apt install lightdm
 
 #Install tint2 task manager
 sudo apt install -y tint2
