@@ -2,7 +2,7 @@
 CCI-Kiosk is a Linux-based thin client for use with Citrix, RDP, and VNC.
 
 ## Introduction
-This project came about because an organization I am a part of was looking at upgrading their thin clients which currently use Windows 7. Many of these machines are old, and would have issues running Windows 10. Since Windows 7 has passed it's end-of-life they would like to find a way to update without throwing away all these machines.
+This project is for organizations or individuals looking to build kiosks. Although it was originally designed for upgrading a batch of thin clients which currently use Windows 7, it could be used in any number of projects. Its also a good way to resurrect old machines which are incapable of running Windows 10 but could be used for thin clients, display boards, or in any number of low-impact kiosk applications.
 
 ### Criteria for this project
 1. Simple - The UI must be intuitive
@@ -11,7 +11,7 @@ This project came about because an organization I am a part of was looking at up
 4. Standalone - They don't need to be on the corporate network to work
 
 ### But Why Thin Clients?
-Many organizations face a common dilemma: How do they distribute software to employees on various devices spread out around the globe. The thin client allows these organizations to offer a competetive computing experience on budget hardware. A solution like Citrix not only allows virtual desktops, but also app streaming, providing a secure means of accessing company apps and services on any device, regardless of operating system, specs, or locale. That's what enables organizations to upgrade Windows 7 Thin Clients to Linux with neglible changes for users. 
+Many organizations face a common dilemma: How do they distribute software to employees on various devices spread out around the globe. The thin client allows these organizations to offer a competitive computing experience on budget hardware. A solution like Citrix not only allows virtual desktops, but also app streaming, providing a secure means of accessing company apps and services on any device, regardless of operating system, specs, or locale. That's what enables organizations to upgrade Windows 7 Thin Clients to Linux with negligible changes for users. 
 
 ## Software Selection
 ### OS
@@ -33,12 +33,12 @@ I have several options that I want to investigate
     - This is perfect for a thin client. Certain websites (like the Citrix login gateway) could be setup as apps. 
     - The OS is also very light. I set it up in a testing environment and it was running on average at 500-600 megs of RAM.
     - The issue with this OS is there is no obvious way to lock down the desktop. While you can easily disable keyboard shortcuts and customize the panel to include no application menu and only the desired launchers, the user can easily modify the panel or open the settings panel by right clicking.
-    - I will continue testing Peppermint, but luckily Ice SSB is available via a .deb file in other Debian based distributions from Launchpad https://launchpad.net/~peppermintos/+archive/ubuntu/p10-release/+files/ice_6.0.6_all.deb
+    - I will continue testing Peppermint, but luckily Ice SSB is available via a .deb file in other Debian based distributions from [Launchpad] (https://launchpad.net/~peppermintos/+archive/ubuntu/p10-release/+files/ice_6.0.6_all.deb)
 
 - Kubuntu 
-    - KDE Plasma is a great desktop environment, and offers a large amount of flexibility. In addition, it has built in kiosk configurations. https://techbase.kde.org/Projects/Plasma/Kiosk
+    - KDE Plasma is a great desktop environment, and offers a large amount of flexibility. In addition, it has built in [kiosk configurations.] (https://techbase.kde.org/Projects/Plasma/Kiosk)
     - Positives: KDE is a sleek and light desktop environment. In addition, the support and assurance offered by Ubuntu is hard to match for an enterprise setting
-    - Negatives: The very customizability which makes KDE so flexible also poses some risks in this situation. For this particular application, I want to make sure there are no hidden settings the user can access.
+    - Negatives: The very customization which makes KDE so flexible also poses some risks in this situation. For this particular application, I want to make sure there are no hidden settings the user can access.
 
 - Zorin OS Lite
     - Zorin OS is a world class operating system, and their relatively new Lite operating offers the polish of Zorin's flagship Ultimate Edition with a light-weight XFCE desktop.
@@ -55,9 +55,12 @@ I have several options that I want to investigate
 
 ## Distribution/ Installation
 So far, I've found the following software for creating a live system from an existing Linux install:
+
 ### Linux Respin
 - Although this project recently got a website upgrade, their Launchpad has seen no new aditions to the software since 2016, so I'm not very keen to use this
+
 ### [Linux Live Kit](https://www.linux-live.org/#explore)
 - This project seems fairly active. I've never used it, but it looks like it's worth investigating
+
 ### Scripts
 - Perhaps another good option would be a set of scripts that the user can run on an already installed system. It would still be important to specify a base system or systems that the scripts are known to work on.

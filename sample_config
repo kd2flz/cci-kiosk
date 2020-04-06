@@ -21,12 +21,12 @@ sudo apt install -y cockpit
 #sudo apt install -y remmina
 
 #Install alsa for sound
-sudo apt install alsa
+sudo apt install -y alsa
 sudo apt install alsa-utils
 #Now you can adjust volume using the alsamixer command
 
-#Install lightdm greeter
-sudo apt install lightdm
+#Install gdm3 display manager
+sudo apt install --no-install-recommends gdm3
 
 #Install tint2 task manager
 sudo apt install -y tint2
@@ -39,4 +39,5 @@ sudo cp -r kiosk.conf /etc/init.d/
 sudo cp -r kiosk.sh /opt/
 sudo cp -r autostart /etc/xdg/openbox/
 sudo chmod +x /etc/xdg/openbox/autostart
-sudo cp -r 12-autologin.conf /etc/lightdm/lightdm.conf.d/12-autologin.conf
+#This enables autologin for the gdm3 display manager
+sudo cp -r custom.conf /etc/gdm3/
