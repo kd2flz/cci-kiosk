@@ -32,7 +32,7 @@ sudo apt install --no-install-recommends gdm3
 sudo apt install -y tint2
 
 #Add user "Kiosk"
-sudo adduser kiosk
+sudo adduser kiosk &&
 
 #Adds Kiosk user to audio group
 sudo usermod -a -G audio kiosk
@@ -49,3 +49,4 @@ sudo cp custom.conf /etc/gdm3/
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER
 #Uncomment below to disable text on screen at boot
 sudo cp grub /etc/default
+sudo update-grub

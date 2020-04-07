@@ -1,5 +1,4 @@
 #!/bin/bash
 #This file automatically starts a given application on startup
-#chromium-browser --disable-info-bars --kiosk 'kd2flz.github.io/cci-kiosk' &
-#tint2 &
-/opt/kiosk.sh
+chromium-browser --disable-info-bars --kiosk 'kd2flz.github.io/cci-kiosk' &
+tint2
