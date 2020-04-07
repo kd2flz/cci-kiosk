@@ -31,13 +31,21 @@ sudo apt install --no-install-recommends gdm3
 #Install tint2 task manager
 sudo apt install -y tint2
 
+#Add user "Kiosk"
+sudo adduser kiosk
+
 #Adds Kiosk user to audio group
 sudo usermod -a -G audio kiosk
 
 #Copy configuration scripts to correct directories
-sudo cp -r kiosk.conf /etc/init.d/
-sudo cp -r kiosk.sh /opt/
-sudo cp -r autostart /etc/xdg/openbox/
+sudo cp kiosk.conf /etc/init.d/
+sudo cp kiosk.sh /opt/
+sudo cp autostart /etc/xdg/openbox/
 sudo chmod +x /etc/xdg/openbox/autostart
 #This enables autologin for the gdm3 display manager
-sudo cp -r custom.conf /etc/gdm3/
+sudo cp custom.conf /etc/gdm3/
+
+#Change grub options
+#Use this option with caution IT MAY BREAK YOUR BOOTLOADER
+#Uncomment below to disable text on screen at boot
+sudo cp grub /etc/default
