@@ -1,4 +1,29 @@
 #!/bin/bash
-#This file automatically starts a given application on startup
-chromium-browser --disable-info-bars --kiosk 'kd2flz.github.io/cci-kiosk' &
-tint2
+
+###################################################################################################
+#This file automatically starts a given application on startup                                    
+#You can add your own app here by adding an & after the last entry and typing the desired Command 
+#For Example                                                                                                                          
+#htop &
+#chromium-browser
+
+####################################################################################################
+
+#The Following Code Courtesy thanks to https://projects-42.nl/index.php/2018/ubuntu-18-04-lts-kiosk-for-web-or-rdp/
+
+# Disable any form of screen saver / screen blanking / power management
+xset s off
+xset s noblank
+xset -dpms
+
+# Allow quitting the X server with CTRL-ATL-Backspace
+setxkbmap -option terminate:ctrl_alt_bksp
+
+# Start Chromium in kiosk mode
+sed -i 's/"exited_cleanly":false/"exited_cleanly":true/' ~/.config/chromium/'Local State'
+sed -i 's/"exited_cleanly":false/"exited_cleanly":true/; s/"exit_type":"[^"]\+"/"exit_type":"Normal"/' ~/.config/chromium/Default/Preferences
+chromium-browser --disable-infobars --kiosk '<http://your-url-here>' #Change this URL to desired web address
+
+#Start Remmina in kiosk mode
+remmina -k
+

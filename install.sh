@@ -1,5 +1,10 @@
 #!/bin/bash
-#Sample config file, if your user is not called kiosk, change all occurences of the username in this script to your user's name
+
+#Installation file for CCI-Kiosk
+#By David Rhoads
+#April 2020
+
+#Sample installation file, your Kiosk user must be named kiosk for this to work
 #Special thanks to Oli Warner https://thepcspy.com, Alan D Moore http://alandmoore.com, and NovaSpirit Tech https://www.novaspirit.com/
 #Update the server
 sudo apt update
