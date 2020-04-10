@@ -43,8 +43,8 @@ sudo adduser kiosk &&
 sudo usermod -a -G audio kiosk
 
 #Copy configuration scripts to correct directories
-sudo cp kiosk.conf /etc/init.d/
-sudo cp kiosk.sh /opt/
+#sudo cp kiosk.conf /etc/init.d/
+#sudo cp kiosk.sh /opt/
 sudo cp autostart /etc/xdg/openbox/
 sudo chmod +x /etc/xdg/openbox/autostart
 #This enables autologin for the gdm3 display manager
