@@ -48,7 +48,7 @@ sudo usermod -a -G audio kiosk
 sudo cp autostart /etc/xdg/openbox/
 sudo chmod +x /etc/xdg/openbox/autostart
 #This enables autologin for the gdm3 display manager
-#sudo cp custom.conf /etc/gdm3/
+sudo cp custom.conf /etc/gdm3/
 
 #Change grub options
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER
