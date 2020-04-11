@@ -9,6 +9,10 @@
 
 ####################################################################################################
 
+#Start Pulseaudio and Openbox Session
+openbox-session &
+start-pulseaudio-x11
+
 #The Following Code Courtesy thanks to https://projects-42.nl/index.php/2018/ubuntu-18-04-lts-kiosk-for-web-or-rdp/
 
 # Disable any form of screen saver / screen blanking / power management
