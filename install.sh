@@ -25,9 +25,6 @@ sudo apt install -y cockpit
 #sudo apt install -y --no-install-recommends ./icaclient_19.12.0.19_amd64.deb
 sudo apt install -y remmina
 
-#Install gdm3 display manager
-#sudo apt install --no-install-recommends gdm3
-
 #Install tint2 task manager
 sudo apt install -y tint2
 
@@ -42,8 +39,6 @@ sudo usermod -a -G audio kiosk
 #sudo cp kiosk.sh /opt/
 sudo cp autostart /etc/xdg/openbox/
 sudo chmod +x /etc/xdg/openbox/autostart
-#This enables autologin for the gdm3 display manager
-sudo cp custom.conf /etc/gdm3/
 
 #Change grub options
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER
