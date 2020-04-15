@@ -14,7 +14,7 @@ sudo apt upgrade -y
 
 #install x server, openbox display manager, chromium browser (open source version of Chrome), and pulse audio, for sound
 #--no-install-recommends prevents package manager from installing unnecessary packages wanted by the target packages
-sudo apt install -y --no-install-recommends xorg openbox chromium-browser pulseaudio
+sudo apt install -y --no-install-recommends xorg openbox chromium pulseaudio
 
 #Uncommment below to install Cockpit for remote management - note, if you are using a non-ubuntu based system, like Debian, you will have to change this command
 sudo apt install -y cockpit
@@ -23,15 +23,10 @@ sudo apt install -y cockpit
 #!Please! Make sure you replace this link with the link to the latest Citrix Workspace App .deb download
 #wget https://downloads.citrix.com/16914/icaclient_19.12.0.19_amd64.deb?__gda__=1585861582_d3571872a714920c2bb3de2ac903c99e
 #sudo apt install -y --no-install-recommends ./icaclient_19.12.0.19_amd64.deb
-#sudo apt install -y remmina
-
-#Install alsa for sound
-sudo apt install -y alsa
-sudo apt install alsa-utils
-#Now you can adjust volume using the alsamixer command
+sudo apt install -y remmina
 
 #Install gdm3 display manager
-sudo apt install --no-install-recommends gdm3
+#sudo apt install --no-install-recommends gdm3
 
 #Install tint2 task manager
 sudo apt install -y tint2
