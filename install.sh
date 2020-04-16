@@ -27,9 +27,6 @@ sudo apt install -y cockpit
 #sudo apt install -y --no-install-recommends ./icaclient_19.12.0.19_amd64.deb
 sudo apt install -y remmina
 
-#Install tint2 task manager
-sudo apt install -y tint2
-
 #Add user "Kiosk"
 sudo adduser kiosk &&
 
