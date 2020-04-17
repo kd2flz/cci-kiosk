@@ -16,7 +16,7 @@ sudo apt upgrade -y
 sudo apt install -y snapd
 #install x server, openbox display manager, chromium browser (open source version of Chrome), and pulse audio, for sound
 #--no-install-recommends prevents package manager from installing unnecessary packages wanted by the target packages
-sudo apt install -y --no-install-recommends xorg openbox pulseaudio
+sudo apt install -y --no-install-recommends xorg openbox pulseaudio ssdm
 sudo snap install chromium
 #Uncommment below to install Cockpit for remote management - note, if you are using a non-ubuntu based system, like Debian, you will have to change this command
 sudo apt install -y cockpit
@@ -34,10 +34,11 @@ sudo adduser kiosk &&
 sudo usermod -a -G audio kiosk
 
 #Copy configuration scripts to correct directories
-#sudo cp kiosk.conf /etc/init.d/
-#sudo cp kiosk.sh /opt/
+#copy autostart file to /etc/xdg/openbox
 sudo cp autostart /etc/xdg/openbox/
 sudo chmod +x /etc/xdg/openbox/autostart
+#Copy autologin file to /etc/sddm.conf.d/autologin.conf
+cp autologin.conf /etc/sddm.conf.d/
 
 #Change grub options
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER
