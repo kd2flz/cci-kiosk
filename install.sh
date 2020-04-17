@@ -16,7 +16,9 @@ sudo apt upgrade -y
 sudo apt install -y snapd
 #install x server, openbox display manager, chromium browser (open source version of Chrome), and pulse audio, for sound
 #--no-install-recommends prevents package manager from installing unnecessary packages wanted by the target packages
-sudo apt install -y --no-install-recommends xorg openbox pulseaudio ssdm
+sudo apt install -y --no-install-recommends xorg pulseaudio
+sudo apt install -y --no-install-recommends openbox
+sudo apt install -y --no-install-recommends sddm
 sudo snap install chromium
 #Uncommment below to install Cockpit for remote management - note, if you are using a non-ubuntu based system, like Debian, you will have to change this command
 sudo apt install -y cockpit
