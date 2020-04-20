@@ -15,8 +15,8 @@ sudo yum install -y snapd
 sudo systemctl enable --now snapd.socket
 #install x server, openbox display manager, chromium browser (open source version of Chrome), and pulse audio, for sound
 #--no-install-recommends prevents package manager from installing unnecessary packages wanted by the target packages
-sudo yum groupinstall "X Window System" 
-sudo yum install -y pulseaudio openbox sddm
+sudo yum groupinstall -y "X Window System" 
+sudo yum install -y pulseaudio openbox sddm nano
 sudo snap install chromium
 #Uncommment below to install Cockpit for remote management - note, if you are using a non-ubuntu based system, like Debian, you will have to change this command
 sudo apt install -y cockpit
@@ -38,10 +38,10 @@ sudo usermod -a -G audio kiosk
 sudo cp autostart /etc/xdg/openbox/
 sudo chmod +x /etc/xdg/openbox/autostart
 #Copy autologin file to /etc/sddm.conf.d/autologin.conf
-sudo cp autologin.conf /etc/sddm.conf.d/
+sudo cp autologin.conf /etc/sddm/
 
 #Change grub options
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER
 #Uncomment below to disable text on screen at boot
-sudo cp grub /etc/default
-sudo update-grub
+#sudo cp grub /etc/default
+#sudo update-grub
