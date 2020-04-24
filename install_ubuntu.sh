@@ -40,7 +40,7 @@ sudo usermod -a -G audio kiosk
 sudo cp autostart /etc/xdg/openbox/
 sudo chmod +x /etc/xdg/openbox/autostart
 #Copy autologin file to /etc/sddm.conf.d/autologin.conf
-sudo cp autologin.conf /etc/sddm/sddm.conf.d/
+sudo cp autologin.conf /etc/sddm/
 
 #Change grub options
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER
