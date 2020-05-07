@@ -18,7 +18,6 @@ sudo apt install -y snapd
 #--no-install-recommends prevents package manager from installing unnecessary packages wanted by the target packages
 sudo apt install -y --no-install-recommends xorg pulseaudio
 sudo apt install -y --no-install-recommends openbox
-sudo apt install -y --no-install-recommends sddm
 sudo snap install chromium
 #Uncommment below to install Cockpit for remote management - note, if you are using a non-ubuntu based system, like Debian, you will have to change this command
 sudo apt install -y cockpit
@@ -39,8 +38,7 @@ sudo usermod -a -G audio kiosk
 #copy autostart file to /etc/xdg/openbox
 sudo cp autostart /etc/xdg/openbox/
 sudo chmod +x /etc/xdg/openbox/autostart
-#Copy autologin file to /etc/sddm.conf.d/autologin.conf
-sudo cp autologin.conf /etc/sddm/
+
 
 #Change grub options
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER
