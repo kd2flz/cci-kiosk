@@ -39,6 +39,9 @@ sudo usermod -a -G audio kiosk
 sudo cp autostart /etc/xdg/openbox/
 sudo chmod +x /etc/xdg/openbox/autostart
 
+#Set up autologin (works with GDM3)
+sudo cp custom.conf /etc/gdm3/
+
 
 #Change grub options
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER
