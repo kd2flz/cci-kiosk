@@ -17,7 +17,8 @@ sudo apt upgrade -y
 sudo apt install -y --no-install-recommends xorg pulseaudio 
 sudo apt install -y --no-install-recommends openbox 
 sudo apt install chromium-browser 
-#Uncommment below to install Cockpit for remote management - note, if you are using a non-ubuntu based system, like Debian, you will have to change this command
+
+#Install Cockpit for remote management - note, if you are using a non-ubuntu based system, like Debian, you will have to change this command
 sudo apt install -y cockpit 
 
 #Uncomment below to install Citrix Workspace App and Remmina for remote desktop connections
@@ -25,6 +26,9 @@ sudo apt install -y cockpit
 #wget https://downloads.citrix.com/16914/icaclient_19.12.0.19_amd64.deb?__gda__=1585861582_d3571872a714920c2bb3de2ac903c99e
 #sudo apt install -y --no-install-recommends ./icaclient_19.12.0.19_amd64.deb
 sudo apt install -y remmina 
+
+#Install GDM (gnome display manager)
+sudo apt install -y gdm3
 
 #Add user "Kiosk"
 sudo adduser kiosk 
