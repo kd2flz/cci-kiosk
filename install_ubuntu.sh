@@ -16,8 +16,8 @@ sudo apt upgrade -y
 #--no-install-recommends prevents package manager from installing unnecessary packages wanted by the target packages
 sudo apt install -y --no-install-recommends xorg pulseaudio 
 sudo apt install -y --no-install-recommends openbox 
-sudo apt install chromium-browser 
-
+sudo apt install -y chromium-browser 
+sudo apt install -y ntp
 #Install Cockpit for remote management - note, if you are using a non-ubuntu based system, like Debian, you will have to change this command
 sudo apt install -y cockpit 
 
@@ -44,6 +44,13 @@ sudo chmod +x /etc/xdg/openbox/autostart
 #Set up autologin (works with GDM3)
 sudo cp custom.conf /etc/gdm3/
 
+#Setup in-house time sync for using local NTP Servers
+#Comment out below if you wish to use the default NTP servers
+#Copy timesyncd.conf to /etc/systemd for in-house time sync
+sudo cp timesyncd.conf /etc/systemd/timesyncd.conf
+#Setup Time Sync
+sudo timedatectl set-ntp false
+sudo timedatectl set-ntp on
 
 #Change grub options
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER
