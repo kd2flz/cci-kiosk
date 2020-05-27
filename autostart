@@ -18,7 +18,7 @@ xset -dpms
 setxkbmap -option terminate:ctrl_alt_bksp
 
 #Start Remmina in kiosk mode
-remmina -k &
+remmina &
 
 /opt/Citrix/ICAClient/selfservice --icaroot/opt/Citrix/ICAClient
 # Start Chromium in kiosk mode
