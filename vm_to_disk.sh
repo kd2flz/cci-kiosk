@@ -11,7 +11,7 @@
 echo This program writes a virtual disk image to a physical drive
 echo CAUTION it will erase the contents of that drive
 echo enter the path to the drive eg /dev/sdX
-read vardrive
+read path_to_drive
 echo enter the path to the disk image you wish to convert eg /home/user/diskimage.qcow2
-read varpath
-qemu-img convert -O raw $varpath $vardrive
+read path_to_qcow
+qemu-img convert -O raw $path_to_qcow $path_to_drive
