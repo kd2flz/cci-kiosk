@@ -1,6 +1,12 @@
 # CCI-Kiosk
-CCI-Kiosk is a Linux-based thin client for use with Citrix, RDP, and VNC.
+CCI-Kiosk is a Linux-based thin client.
 
+## Navigation
+[Read Me](README.md)
+
+[Installation](installation.md)
+
+[Management](management.md)
 
 ## To Do
 - [ ] Get CCI-Kiosk working in VM

@@ -1,4 +1,12 @@
 # Managing CCI Kiosk
+CCI-Kiosk is a Linux-based thin client.
+
+## Navigation
+[Read Me](README.md)
+
+[Installation](installation.md)
+
+[Management](management.md)
 
 ## Introduction
 There is a certain amount of management capability built into CCI Kiosk. While you could easily use a paid service like Ubuntu Landscape from Canonical, CCI Kiosk uses the Red Hat sponsored [cockpit](https://cockpit-project.org/) for management. 

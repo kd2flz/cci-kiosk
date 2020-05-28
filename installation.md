@@ -1,4 +1,12 @@
 # Installing CCI-Kiosk
+CCI-Kiosk is a Linux-based thin client.
+
+## Navigation
+[Read Me](README.md)
+
+[Installation](installation.md)
+
+[Management](management.md)
 
 CCI Kiosk is built to be installed on top of an existing Linux distribution. I've mostly been testing it with Ubuntu. I would recommend using the latest long-term-support (LTS) release, as these are supported for many years. However, it can also be installed on top of Debian, and probably any Debian based distro. In addition, with a bit of tweaking the script should work on any Linux distro.
 
