@@ -8,7 +8,9 @@ ReadMe
 
 [Management](management.md)
 
+
 ## To Do
+
 - [ ] Get CCI-Kiosk working in VM
 	- [ ] Confirm that timesync works on local machine (think it didn't work on VM because of network issues)
 	- [ ] Openbox set Chromium as "Wallpaper?"
