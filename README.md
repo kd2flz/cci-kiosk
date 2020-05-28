@@ -17,6 +17,7 @@ ReadMe
 	- [ ] Or maybe terminal?
 	- [ ] Relaunch apps if closed
 	- [ ] Plymouth Boot Splash
+        - [ ] Add plymouth to install script
 		- [ ] Get Ubuntu Splash Working
 		- [ ] Custom Theme?
 - [ ] Make a video of it working
