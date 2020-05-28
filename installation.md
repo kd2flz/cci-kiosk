@@ -4,7 +4,7 @@ CCI-Kiosk is a Linux-based thin client.
 ## Navigation
 [Read Me](README.md)
 
-[Installation](installation.md)
+Installation
 
 [Management](management.md)
 
