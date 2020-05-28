@@ -30,6 +30,9 @@ sudo apt install -y remmina
 #Install GDM (gnome display manager)
 sudo apt install -y gdm3
 
+#Install Plymouth for Boot Splash
+sudo apt install -y plymouth plymouth-themes
+
 #Add user "Kiosk"
 sudo adduser kiosk 
 
