@@ -1,6 +1,18 @@
 # CCI-Kiosk
 CCI-Kiosk is a Linux-based thin client for use with Citrix, RDP, and VNC.
 
+
+## To Do
+- [ ] Get CCI-Kiosk working in VM
+	- [ ] Confirm that timesync works on local machine (think it didn't work on VM because of network issues)
+	- [ ] Openbox set Chromium as "Wallpaper?"
+	- [ ] Or maybe terminal?
+	- [ ] Relaunch apps if closed
+	- [ ] Plymouth Boot Splash
+		- [ ] Get Ubuntu Splash Working
+		- [ ] Custom Theme?
+- [ ] Make a video of it working
+
 ## Installation
 Go [here](installation.md) for installation instructions
 
