@@ -43,6 +43,9 @@ sudo apt install -y systemd-timesyncd
 #Install Cockpit for remote management - note, if you are using a non-ubuntu based system, like Debian, you will have to change this command
 sudo apt install -y cockpit 
 
+#Install alsa for sound
+sudo apt install -y alsa alsa-utils
+
 #Uncomment below to install Citrix Workspace App and Remmina for remote desktop connections
 #!Please! Make sure you replace this link with the link to the latest Citrix Workspace App .deb download
 #wget https:///downloads/workspace-app/linux/workspace-app-for-linux-latest.html
