@@ -57,7 +57,7 @@ sudo timedatectl set-ntp on
 
 #Allow network to be configured by network manager
 chmod +x network.sh
-sudo ./network
+sudo ./network.sh
 
 #Change grub options
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER
