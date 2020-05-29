@@ -6,6 +6,28 @@
 
 #Sample installation file, your Kiosk user must be named kiosk for this to work
 #Special thanks to Oli Warner https://thepcspy.com, Alan D Moore http://alandmoore.com, and NovaSpirit Tech https://www.novaspirit.com/
+
+#Network Configuration Function
+#Thanks to Martin Wimpress for this bit of code
+function configure_network() {
+  echo "[+] Will now configure network"
+  # Disable cloud-init from managing the network
+  echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
+
+  # Instruct netplan to hand all network management to NetworkManager
+  cat <<EOM > /etc/netplan/01-network-manager-all.yaml
+# Let NetworkManager manage all devices on this system
+network:
+  version: 2
+  renderer: NetworkManager
+EOM
+
+  # Disable Wifi Powersaving to improve Pi WiFi performance
+  if [ -e /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf ]; then
+    sed -i 's/wifi.powersave = 3/wifi.powersave = 2/' /etc/NetworkManager/conf.d/default-wifi-powersave-on.conf
+  fi
+}
+
 #Update the server
 sudo apt update
 
@@ -56,8 +78,7 @@ sudo timedatectl set-ntp false
 sudo timedatectl set-ntp on
 
 #Allow network to be configured by network manager
-chmod +x network.sh
-sudo ./network.sh
+sudo configure_network
 
 #Change grub options
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER
