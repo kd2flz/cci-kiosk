@@ -12,13 +12,13 @@ ReadMe
 ## To Do
 
 - [ ] Get CCI-Kiosk working in VM
-	- [ ] Confirm that timesync works on local machine (think it didn't work on VM because of network issues)
+	- [X] Confirm that timesync works on local machine (think it didn't work on VM because of network issues)
 	- [ ] Openbox set Chromium as "Wallpaper?"
 	- [ ] Or maybe terminal?
 	- [ ] Relaunch apps if closed
 	- [ ] Plymouth Boot Splash
-        - [ ] Add plymouth to install script
-		- [ ] Get Ubuntu Splash Working
+        - [X] Add plymouth to install script
+		- [X] Get Ubuntu Splash Working
 		- [ ] Custom Theme?
 - [ ] Make a video of it working
 
