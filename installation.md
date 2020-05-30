@@ -22,8 +22,6 @@ Here's how to install CCI-Kiosk on Ubuntu
 8. Run the installation script with the following command: `./install_ubuntu.sh`. Be sure to answer yes to any questions it asks. At the end of this script, you will have to create a password for the new "kiosk" user it creates.
 9. Drink a glass of something good.
 10. After the installation is complete, restart your system with `sudo reboot`
-11. Click on the gear icon (should be either right below the password window or in the bottom right of your screen, depending on which version of Gnome Desktop you're running). Select "Openbox" as your desktop session.
-12. Log back into your user, and go to system settings. The best is to press the windows key to search and then type "settings."
-13. Go to "users", and click "unlock". You will need to enter your password. Go to the settings for the "kiosk" user and toggle autologin to on
-14. While your still logged in, you will likely want the ip address of the machine for managing later. The easiest way to do this is to go to "Network" in settings, and click the gear icon by your primary network connection. Your IP address should be listed.
+11. You should automatically get logged in to the kiosk user. Press [CTRL][ALT][Delete] to log out. Select the Kiosk user at the login screen, and click on the gear icon (should be either right below the password window or in the bottom right of your screen, depending on which version of Gnome Desktop you're running). Select "Openbox" as your desktop session.
+12. Log back into the kiosk user, using the password set earlier.
 15. When you're ready, reboot your machine and it should automatically pull up the Github site for this project. This can be changed! See the [management](management.md) page. 
