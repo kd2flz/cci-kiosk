@@ -28,8 +28,6 @@ sudo apt install -y alsa alsa-utils
 
 #Uncomment below to install Citrix Workspace App and Remmina for remote desktop connections
 #!Please! Make sure you replace this link with the link to the latest Citrix Workspace App .deb download
-#wget https:///downloads/workspace-app/linux/workspace-app-for-linux-latest.html
-#sudo apt install -y ./icaclient_19.12.0.19_amd64.deb
 sudo apt install -y remmina 
 
 #Install GDM (gnome display manager)
