@@ -20,6 +20,8 @@ ReadMe
         - [X] Add plymouth to install script
 		- [X] Get Ubuntu Splash Working
 		- [ ] Custom Theme?
+    - [ ] Disable right click on the desktop
+    - [ ] Disable keyboard shortcuts
 - [ ] Make a video of it working
 
 ## Installation
