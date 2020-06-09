@@ -12,17 +12,10 @@ ReadMe
 ## To Do
 
 - [ ] Get CCI-Kiosk working in VM
-	- [X] Confirm that timesync works on local machine (think it didn't work on VM because of network issues)
-	- [ ] Openbox set Chromium as "Wallpaper?"
-	- [ ] Or maybe terminal?
-	- [ ] Relaunch apps if closed
-	- [ ] Plymouth Boot Splash
-        - [X] Add plymouth to install script
-		- [X] Get Ubuntu Splash Working
-		- [ ] Custom Theme?
-    - [ ] Disable right click on the desktop
+	- [ ] Remove ability to right click on desktop
+    - [ ] Relaunch apps if closed
     - [ ] Disable keyboard shortcuts
-- [ ] Make a video of it working
+- [ ] Make Demonstration Video
 
 ## Installation
 Go [here](installation.md) for installation instructions
