@@ -11,10 +11,9 @@ ReadMe
 
 ## To Do
 
-- [ ] Get CCI-Kiosk working in VM
-	- [ ] Remove ability to right click on desktop
-    - [ ] Relaunch apps if closed
-    - [ ] Disable keyboard shortcuts
+- [ ] Remove ability to right click on desktop
+- [ ] Relaunch apps if closed
+- [ ] Disable keyboard shortcuts
 - [ ] Make Demonstration Video
 
 ## Installation
