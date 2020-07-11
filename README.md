@@ -39,7 +39,7 @@ CCI Kiosk is a script that you run on top of an Ubuntu Server installation. The 
 
 ### Background Information
 
-If you are interested in the thought process behind this project, see my [background.md](Background) page.
+If you are interested in the thought process behind this project, see my [background](background.md) page.
 
 ### Getting involved
 
