@@ -2,9 +2,13 @@
 
 This page explains my thought process in choosing the software and installation method I ended up with.
 
-## Why Thin Clients
+## Navigation
 
-Many organizations face a common dilemma: How do they distribute software to employees on various devices spread out around the globe. The thin client allows these organizations to offer a competitive computing experience on budget hardware. A solution like Citrix not only allows virtual desktops, but also app streaming, providing a secure means of accessing company apps and services on any device, regardless of operating system, specs, or locale. That's what enables organizations to upgrade Windows 7 Thin Clients to Linux with negligible changes for users. 
+[Read Me](README.md)
+
+[Installation](installation.md)
+
+[Management](management.md)
 
 ## Software Selection
 
@@ -12,7 +16,7 @@ Many organizations face a common dilemma: How do they distribute software to emp
 
 To begin, I need to choose which OS will be used for this process. 
 
-#### Enter Linux 
+#### Enter Linux
 
 Linux is the perfect solution to this problem for several reasons.
 
@@ -28,11 +32,11 @@ I have several options that I want to investigate
 
 Peppermint OS
 
-    - Peppermint OS is an Ubuntu derivative that is optimized for web applications. It uses a tool called Ice SSB (Site Specific Browsers) to create an isolated browser window that appears as an app listed in the application menu. 
-    - This is perfect for a thin client. Certain websites (like the Citrix login gateway) could be setup as apps. 
-    - The OS is also very light. I set it up in a testing environment and it was running on average at 500-600 megs of RAM.
-    - The issue with this OS is there is no obvious way to lock down the desktop. While you can easily disable keyboard shortcuts and customize the panel to include no application menu and only the desired launchers, the user can easily modify the panel or open the settings panel by right clicking.
-    - I will continue testing Peppermint, but luckily Ice SSB is available via a .deb file in other Debian based distributions from [Launchpad] (https://launchpad.net/~peppermintos/+archive/ubuntu/p10-release/+files/ice_6.0.6_all.deb)
+- Peppermint OS is an Ubuntu derivative that is optimized for web applications. It uses a tool called Ice SSB (Site Specific Browsers) to create an isolated browser window that appears as an app listed in the application menu.
+- This is perfect for a thin client. Certain websites (like the Citrix login gateway) could be setup as apps. 
+- The OS is also very light. I set it up in a testing environment and it was running on average at 500-600 megs of RAM.
+- The issue with this OS is there is no obvious way to lock down the desktop. While you can easily disable keyboard shortcuts and customize the panel to include no application menu and only the desired launchers, the user can easily modify the panel or open the settings panel by right clicking.
+- I will continue testing Peppermint, but luckily Ice SSB is available via a .deb file in other Debian based distributions from [Launchpad] (https://launchpad.net/~peppermintos/+archive/ubuntu/p10-release/+files/ice_6.0.6_all.deb)
 
 Kubuntu
 
