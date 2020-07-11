@@ -28,7 +28,7 @@ This project is for organizations or individuals looking to build kiosks. Althou
 
 ### What is CCI-Kiosk?
 
-CCI Kiosk, in brief is a script that you run on top of an Ubuntu Server installation. The result is a kiosk which can be used either as a thin client with Citrix/RDP, or as a web kiosk for some sort of web based application.
+CCI Kiosk is a script that you run on top of an Ubuntu Server installation. The result is a kiosk which can be used either as a thin client with Citrix/RDP, or as a web kiosk for some sort of web based application.
 
 ### Criteria for this project
 
