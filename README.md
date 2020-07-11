@@ -26,7 +26,6 @@ This project is for organizations or individuals looking to build kiosks. Althou
 
 CCI Kiosk, in brief is a script that you run on top of an Ubuntu Server installation. The result is a kiosk which can be used either as a thin client with Citrix/RDP, or as a web kiosk for some sort of web based application.
 
-
 ### Criteria for this project
 
 1. Simple - The UI must be intuitive
@@ -34,3 +33,10 @@ CCI Kiosk, in brief is a script that you run on top of an Ubuntu Server installa
 3. Standard - If one breaks you can plug another one in and it will work
 4. Standalone - They don't need to be on the corporate network to work
 
+### Background Information
+
+If you are interested in the thought process behind this project, see my [background.md](Background) page. 
+
+### Getting involved
+
+I'm a *very* new developer, and I welcome input, code contributions, and other creative feedback. You can also email me at kd2flz@outlook.com.
