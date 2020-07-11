@@ -1,7 +1,9 @@
 # CCI-Kiosk
+
 CCI-Kiosk is a Linux-based thin client.
 
 ## Navigation
+
 ReadMe
 
 [Installation](installation.md)
@@ -17,9 +19,11 @@ ReadMe
 - [ ] Make Demonstration Video
 
 ## Installation
+
 Go [here](installation.md) for installation instructions
 
 ## Introduction
+
 This project is for organizations or individuals looking to build kiosks. Although it was originally designed for upgrading a batch of thin clients which currently use Windows 7, it could be used in any number of projects. Its also a good way to resurrect old machines which are incapable of running Windows 10 but could be used for thin clients, display boards, or in any number of low-impact kiosk applications.
 
 ### What is CCI-Kiosk?
