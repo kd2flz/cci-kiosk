@@ -7,7 +7,9 @@
 #Sample installation file, your Kiosk user must be named kiosk for this to work
 #Special thanks to Oli Warner https://thepcspy.com, Alan D Moore http://alandmoore.com, and NovaSpirit Tech https://www.novaspirit.com/
 
-
+#Pull changes from GitHub
+echo "Installing CCI Kiosk"
+git pull https://github.com/kd2flz/cci-kiosk
 #Update the server
 sudo apt update
 
@@ -61,6 +63,10 @@ sudo timedatectl set-ntp on
 #Allow network to be configured by network manager
 sudo chmod +x network_config.sh
 sudo ./network_config.sh
+
+#Copy openbox configuration to kiosk home directory
+mkdir /home/kiosk/.config/openbox
+sudo cp rc.xml /home/kiosk/.config/openbox
 
 #Change grub options
 #Use this option with caution IT MAY BREAK YOUR BOOTLOADER

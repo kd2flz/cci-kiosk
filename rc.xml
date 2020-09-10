@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_config xmlns="http://openbox.org/3.4/rc">
+    <applications>
+        <!-- match all windows, and remove their decorations -->
+        <application class="*">
+            <fullscreen>yes</fullscreen>
+            <decor>no</decor>
+        </application>
+        </applications>
+</openbox_config>
